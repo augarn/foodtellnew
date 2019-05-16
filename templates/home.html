@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title> Home </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/home.css') }}">
+  </head>
+  <body>
+
+    <div id="flex">
+
+      <h2> Välkommen, {{ username }} </h2>
+
+      {% if producent == True %}
+        <a class="article" href="addarticle"> LÄGG TILL EN ARTIKEL </a>
+        <a class="article" href="myarticles"> DINA ARTIKLAR </a>
+        <a class="article" href="orders"> ALLA ORDERS </a>
+      {% endif %}
+
+      <a class="article" href="myorders"> DINA BESTÄLLNINGAR </a>
+      <a class="article" href="articles"> HITTA ALLA ARTIKLAR HÄR </a>
+      <a class="article" href="producent"> REGISTRERADE PRODUCENTER </a>
+      <a id="logout" href="logout"> LOGGA UT </a> </p>
+
+    </div>
+
+  </body>
+</html>
