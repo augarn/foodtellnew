@@ -10,7 +10,6 @@ Flask-OAuthlib==0.9.5
 Flask-SocketIO==3.3.2
 greenlet==0.4.15
 gunicorn==19.9.0
-gyp==0.1
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.1
